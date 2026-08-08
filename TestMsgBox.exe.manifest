@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="TestMsgBox.exe" version="1.0.0.0" publicKeyToken="f29a44ce32c21c40" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TestMsgBox" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="TestMsgBox.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Bildirim Seçenekleri
+          Windows Kullanıcı Hesabı Denetimi düzeyini değiştirmek istiyorsanız,
+           requestedExecutionLevel düğümünü aşağıdakilerden biriyle değiştirin.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Geriye dönük uyumluluk için Dosya ve Kayıt Defteri Sanallaştırması
+         kullanmak istiyorsanız, requestedExecutionLevel düğümünü silin.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TestMsgBox.exe" size="13568">
+      <assemblyIdentity name="TestMsgBox" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>32SShXTAJKRF3TgohdhKb+9XCAoPX7ZA4t567mlILEQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=Siber Guvenlik Akademisi ClickOnce Lab" issuerKeyHash="12110d7a94d586d5b2cd4fdc31058bc3f1832660" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>A+KGKONytnn0gxAC+ZBiEMxMuUY45a9kGVDoSPwx4uA=</DigestValue></Reference></SignedInfo><SignatureValue>Od0Eg9WCkU8G3Q3RVEXuq1OgSwKLMXUBP7NqE7uv91HM37AI1cL1eXOI//3IkUspl5Tl2WmARTQ371bJ2WfCEfk8MIbR64ArXzuAOYenCiTE3knMgg4yx2l4YZNITCsKxI8MD30QKZtN0/OrFIiR33XNHkZ/7boJjfYqK3+IOhGCdH92s8P3usFGJD+brePAjfOl7+75CW7eHm9XiY3QlqBJkvZ07D/PC/V9RukmtIWQOtTxJ7wxIqkg4hmmkTY9KtxuGUgdlEemLyQtZ5GW5l3OhTDZPBbwJY/Rg573491Zn1fYmjdDhAtFcnPRpP7a4qJHUREIujGRhuDcX3//3w==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wjoRvXSiRKt6MHh6j+FuRKYJNR5P+AhxmbIJMMkRS5tZWpqkOsx+tK4r0y3p7uzf4EhP88TpyuHuqHS9xdlbUOgoThe4OXlGXtWHuQ6gH7v3RFSA9cjcg1Lhc5sOTmwxo/I2yAZH0O7KIf5OWWHt1f1XWL0H48HnqZZp5NRbPqh7fIPzQTDsvWVzUS1RAiMM6sqVJPS2puCDGGRKwXQAyr3YCl7Loa2qp88Eu6sqUIuK1EkFdbl+uc80QOBjolXmwoan8oHjmUz42CDFU/EBE1fZcgg6TCkd0cfVyCAJpwippz3AFd21hpD1nsjYudmjMkMx1e0x/1P8EJKoknfovQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e0e231fc48e8501964afe53846b94ccc106290f9021083f479b672e32886e203" Description="" Url=""><as:assemblyIdentity name="TestMsgBox.exe" version="1.0.0.0" publicKeyToken="f29a44ce32c21c40" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Siber Guvenlik Akademisi ClickOnce Lab</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>sVWdmDX1HL41unIqUel1BT3qKrZLk3jnjraV7oQhhLU=</DigestValue></Reference></SignedInfo><SignatureValue>cfDGU+ULJfg3eCALCJvlMHTHgzXyMt0yfi9ealAWwvI+Oaoufi7ZvJNBosMtQVi25qtOvZFLQwu2djaQZUIo70VCWEvKnoTTrWVT6BmsiRSWOcR4VvLnIcbXjy2uigj0jlB7HWS38DHV2fNf0j1V4pQ6sP6ygQxn5M3lnu7Ibh/64ruJyWOQ+oO380QWE7iZpKFPDtuzmih0u8fCVCJXKBHMDu/L94t1LtRI0IDYR9KoucPyO3DxJP2JgbumN2IAAgKXPIVo6eKvvS24TTaptHIuMrH5xQnGm1m2rfbK31vubvstqfq2+vaO8QnpESKsxKHYo5SStmX/3xpw9j65Rw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wjoRvXSiRKt6MHh6j+FuRKYJNR5P+AhxmbIJMMkRS5tZWpqkOsx+tK4r0y3p7uzf4EhP88TpyuHuqHS9xdlbUOgoThe4OXlGXtWHuQ6gH7v3RFSA9cjcg1Lhc5sOTmwxo/I2yAZH0O7KIf5OWWHt1f1XWL0H48HnqZZp5NRbPqh7fIPzQTDsvWVzUS1RAiMM6sqVJPS2puCDGGRKwXQAyr3YCl7Loa2qp88Eu6sqUIuK1EkFdbl+uc80QOBjolXmwoan8oHjmUz42CDFU/EBE1fZcgg6TCkd0cfVyCAJpwippz3AFd21hpD1nsjYudmjMkMx1e0x/1P8EJKoknfovQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIDMjCCAhqgAwIBAgIQM6NW7ghi6LBBKeAIaRyrYDANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDDCZTaWJlciBHdXZlbmxpayBBa2FkZW1pc2kgQ2xpY2tPbmNlIExhYjAeFw0yNjA4MDgxNTE1NDVaFw0yODA4MDgxNTI1NDVaMDExLzAtBgNVBAMMJlNpYmVyIEd1dmVubGlrIEFrYWRlbWlzaSBDbGlja09uY2UgTGFiMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwjoRvXSiRKt6MHh6j+FuRKYJNR5P+AhxmbIJMMkRS5tZWpqkOsx+tK4r0y3p7uzf4EhP88TpyuHuqHS9xdlbUOgoThe4OXlGXtWHuQ6gH7v3RFSA9cjcg1Lhc5sOTmwxo/I2yAZH0O7KIf5OWWHt1f1XWL0H48HnqZZp5NRbPqh7fIPzQTDsvWVzUS1RAiMM6sqVJPS2puCDGGRKwXQAyr3YCl7Loa2qp88Eu6sqUIuK1EkFdbl+uc80QOBjolXmwoan8oHjmUz42CDFU/EBE1fZcgg6TCkd0cfVyCAJpwippz3AFd21hpD1nsjYudmjMkMx1e0x/1P8EJKoknfovQIDAQABo0YwRDAOBgNVHQ8BAf8EBAMCB4AwEwYDVR0lBAwwCgYIKwYBBQUHAwMwHQYDVR0OBBYEFBIRDXqU1YbVss1P3DEFi8PxgyZgMA0GCSqGSIb3DQEBCwUAA4IBAQBR+4AQSnehEF1ui3h7uGj1tqSFqzOjxPMqRPGP5l8sVECoNYn/r0KbtBx/nuPoRqnH35NV5SXh+a7nOl7Gm6K/oWyUpV67cQQtuFFwYOy6yoIBewe3j8ZgvzhtlQPSULEQaovxUbR4qGZL3SLdjB1sL4+WJOg1w3e1GtwXgSkLxahyfpFunzLpa7M8vdaI+Bf/9q5Tt6gpLgDakEUvRwPIti+Gcw335ArCAngRgNA5Mp2zATj84yh8ungNscNieFLdMYpPpw7pSBt7u/h0beU0uc1ISEuh1gwXFilXknBKeAJ39w7l3Hlcn2v0rN3Lmn6TRtSf0systzHgINc/lUFS</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
